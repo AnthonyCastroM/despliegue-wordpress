@@ -44,3 +44,9 @@ networks:
 volumes:
   db_data:
   wp_data:
+
+db:
+    image: mysql:8.0
+    platform: linux/amd64
+    container_name: mysql_db
+    restart: always
